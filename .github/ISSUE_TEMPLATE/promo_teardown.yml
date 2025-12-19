@@ -1,0 +1,87 @@
+name: 🧹 Promo Day Teardown
+description: Weekly checklist for taking down promo displays and reconciling inventory
+title: "Promo Teardown – Week of "
+labels: ["promo", "operations"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 📋 Promo Day Teardown Checklist
+
+        **Inventory Counting Guidance**
+        - If product is **repalleted** → count by **cases per layer × number of layers**
+        - If product is left in a **Gaylord** → count by **items per layer × number of layers**
+        - Note which method was used below
+
+  - type: checkboxes
+    id: inventory
+    attributes:
+      label: 🛒 Product & Inventory
+      options:
+        - label: Remove promo product from sales floor
+        - label: Product left in Gaylord (count by layer × layers)
+        - label: Product repalleted (count by layer × layers)
+        - label: Recount leftover product using selected method
+        - label: Compare end count to starting inventory
+        - label: Discrepancies noted (if any)
+
+  - type: textarea
+    id: count_details
+    attributes:
+      label: 📦 Inventory Count Details
+      description: Record how the count was calculated
+      placeholder: |
+        Example:
+        Storage: Gaylord
+        Items per layer: 12
+        Number of layers: 6
+        Total: 72 units
+
+  - type: checkboxes
+    id: tables
+    attributes:
+      label: 🪑 Tables & Display Equipment
+      options:
+        - label: Take down promo tables
+        - label: Remove blue tablecloths
+        - label: Return buffet table used for display
+
+  - type: checkboxes
+    id: signage
+    attributes:
+      label: 🚧 Crowd Control & Signage
+      options:
+        - label: Place stanchions back into holder
+        - label: Return large promo sign from weekly promo display
+        - label: Move promo sign back to buffet area
+
+  - type: checkboxes
+    id: systems
+    attributes:
+      label: 🎟️ Systems & Admin
+      options:
+        - label: Redeem all promo tickets in Trilogy
+        - label: Confirm no outstanding redemption errors
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: 📝 Notes / Issues
+      placeholder: |
+        Example:
+        Product left in Gaylord due to late pickup.
+        Count verified by second associate.
+
+  - type: input
+    id: completed_by
+    attributes:
+      label: ✅ Completed by
+      placeholder: Name
+
+  - type: input
+    id: date
+    attributes:
+      label: 📅 Date
+      placeholder: MM/DD/YYYY
